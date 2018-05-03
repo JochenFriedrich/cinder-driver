@@ -1271,7 +1271,7 @@ class DateraApi(object):
         if connector:
             metadata.update(connector)
         LOG.debug("Adding volume metadata: %s", metadata)
-        self._update_metadata_2_2(volume, metadata)
+        self._update_metadata_2_1(volume, metadata)
 
     def _scrape_template_2_1(self, policies):
         sname = policies['default_storage_name']
